@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+a:visited {
+  color: white;
+}
+.bg-primary-color {
+  background-color: #76bebe;
+}
+.text-primary {
+  color: #cf509c;
+}
+body {
+  background-color: #f0c4e642;
+}
+.container {
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+nav {
+  padding: 20px 0;
+  background-color: #76bebe;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+header > div {
+  background-color: white;
+}
+.logo-area {
+  padding: 20px 0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+section {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 40px;
+}
+section form {
+  display: grid;
+  grid-auto-flow: row;
+}
+.form-area label {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.form-area input[type="text"] {
+  margin-bottom: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.form-area input[type="submit"] {
+  border: none;
+  width: 50%;
+  color: white;
+  font-weight: 600;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+.table-area {
+  text-align: center;
+  justify-self: center;
+  overflow-x: scroll;
+  width: 100%;
+}
+.table-area table {
+  border-collapse: collapse;
+  max-width: 400px;
+}
+.table-area table th {
+  padding: 10px;
+  color: white;
+  background-color: rgb(49, 49, 49);
+}
+.table-area table td {
+  padding: 10px;
+}
+.table-area table td i {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .logo-area {
+    display: grid;
+    grid-auto-flow: row;
+  }
+  .logo-area img {
+    justify-self: center;
+    margin: 20px 0;
+  }
+  nav ul {
+    align-items: center;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-bottom: 20px;
+  }
+  section {
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+@media (max-width: 600px) {
+}
